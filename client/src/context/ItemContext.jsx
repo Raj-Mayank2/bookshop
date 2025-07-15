@@ -11,7 +11,7 @@ function CustomItemContext({ children }) {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await fetch("http://localhost:5000/api/books");
+				const response = await fetch("https://bookshop-vb6z.onrender.com/api/books");
 				const product = await response.json();
 				console.log("Fetched products:", product);
 				setProducts(product);
